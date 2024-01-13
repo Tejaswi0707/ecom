@@ -3,6 +3,7 @@ import datetime
 
 #Categories of Products
 class Category(models.Model):
+	# Category
 	name=models.CharField(max_length=50)
 
 	def __str__(self):
