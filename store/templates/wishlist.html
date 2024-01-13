@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5"><!--adds a container-->
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Wishlist...</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Share your wishlist to get notified when items are in-stock!!</p>
+                </div>
+            </div>
+        </header>
+
+<form>
+  <!-- Name input -->
+  <div class="form-outline mb-6">
+    <input type="text" id="form4Example1" class="form-control" />
+    <label class="form-label" for="form4Example1">Name</label>
+  </div>
+
+  <!-- Email input -->
+  <div class="form-outline mb-6">
+    <input type="email" id="form4Example2" class="form-control" />
+    <label class="form-label" for="form4Example2">Email address</label>
+  </div>
+
+  <!-- Message input -->
+  <div class="form-outline mb-6">
+    <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+    <label class="form-label" for="form4Example3">Wish list</label>
+  </div>
+
+  <!-- Checkbox -->
+  <div class="form-check d-flex justify-content-center mb-4">
+    <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+    <label class="form-check-label" for="form4Example4">
+      Notify me
+    </label>
+  </div>
+
+  <!-- Submit button -->
+  <center>
+  <button type="submit" class="btn btn-primary btn-block mb-4">
+    Notify
+  </button>
+</center>
+</form>
+
+
+
+{% endblock %}

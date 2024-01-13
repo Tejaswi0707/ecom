@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- Header-->
+        <header class="bg-dark py-5">
+            <div class="container px-4 px-lg-5 my-5"><!--adds a container-->
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Be a seller...</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Sell an item!!</p>
+                </div>
+            </div>
+        </header>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sell Your Item</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+  <h2 class="mb-4">Sell Your Item</h2>
+  <form>
+    <div class="form-group">
+      <label for="sellerName">Seller Name:</label>
+      <input type="text" class="form-control" id="sellerName" placeholder="Enter your name" required>
+    </div>
+    <div class="form-group">
+      <label for="productName">Product Name:</label>
+      <input type="text" class="form-control" id="productName" placeholder="Enter product name" required>
+    </div>
+    <div class="form-group">
+      <label for="productCategory">Product Category:</label>
+      <select class="form-control" id="productCategory" required>
+        <option value="" disabled selected>Select category</option>
+        <option value="Books">Books</option>
+        <option value="Stationary">Stationary
+        </option>
+        <!-- Add more categories as needed -->
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="condition">Condition:</label>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="condition" id="newCondition" value="new" checked>
+        <label class="form-check-label" for="newCondition">
+          New
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="condition" id="usedCondition" value="used">
+        <label class="form-check-label" for="usedCondition">
+          Used
+        </label>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="price">Price:</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">$</span>
+        </div>
+        <input type="number" class="form-control" id="price" placeholder="Enter price" required>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<br/><br/>
+
+</body>
+</html>
+
+
+{% endblock %}
